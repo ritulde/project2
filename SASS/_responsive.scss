@@ -1,0 +1,106 @@
+@include media-md{
+    .menu-btn{
+        visibility: hidden;
+    }
+    .nav{
+        visibility: visible;
+
+        .menu-nav{
+            display: block;
+            transform: translateY(0);
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: right;
+
+            &_item{
+                display: initial;
+                padding: 1.5rem;
+            }
+            &_link{
+                font-size: 1.5rem;
+            }
+
+
+        }
+    }
+    .about_bio{
+        font-size: 1.5rem;
+    }
+     
+    .projects{
+        &_bio-image{
+            height: 80vh;
+        }
+        &_items{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .text-secondary{
+            font-size: 3rem;
+        }
+
+    }
+    .contact_list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact{
+        background:
+     url('../image/pexels-burst-374044.jpg') left -200px top ;
+    background-size: cover;
+    }
+}
+
+
+@include media-lg{
+    .projects{
+       
+        &_items{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .text-secondary{
+            font-size: 3rem;
+        }
+        
+
+    }
+    .contact_list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    body{
+        font-size: 1.5rem;
+    }
+}
+
+@include media-xl{
+    .projects{
+        &_bio-image{
+            height: 50vh;
+        }
+    
+    }
+    .home{
+        background: url(../image/pexels-burst-374044.jpg) left -80px top;
+    background-size: cover;
+    }
+
+}
+@include media-sm-1{
+    .about{
+        .jobs{
+            width: 35vh;
+        }
+    }
+    .projects{
+        &_items{
+            width: 38vh;
+        }
+    }
+}
+@include media-md-1{
+    .contact_list{
+        font-size: 1rem;
+    }
+}

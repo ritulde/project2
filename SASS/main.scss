@@ -1,0 +1,93 @@
+@import 'config';
+@import 'home';
+@import 'menu';
+@import 'about';
+@import 'projects';
+@import 'contact';
+@import 'responsive';
+
+
+
+body{
+    background: $primary-color;
+    color: #fff;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+h1,h2,h3 {
+    font-weight: 400;
+}
+a{
+    color:#fff;
+    text-decoration: none;
+    padding: .5rem;
+}
+.text-secondary{
+    color: $secondary-color;
+}
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 1rem;
+}
+main{
+    height: 100%;
+    width: 100%;
+    .social-icons{
+        position: fixed;
+        bottom: 3rem;
+        left: 1rem;
+        .fa-twitter {
+            color: #1DA1F2;
+            background-color: #fff;
+            &:hover{
+                color: $secondary-color;
+            }
+        }
+        .fa-facebook{
+            color:#4267B2 ;
+            background-color: #fff;
+            &:hover{
+                color: $secondary-color;
+            }
+        }
+        .fa-instagram{
+            color:#833AB4 ;
+            background-color: #fff;
+            &:hover{
+                color: $secondary-color;
+            }
+        }
+        .fa-github{
+            color:#4078c0 ;
+            background-color: #fff;
+            &:hover{
+                color: $secondary-color;
+            }
+        }
+        .fa-linkedin{
+            color:  #0e76a8;
+            background-color: #fff;
+            &:hover{
+                color: $secondary-color;
+            }
+        }
+        a{
+            padding: 0.4rem;
+            @include transition-ease;
+        }
+    }
+}
+footer{
+    font-size: 1rem;
+    position: fixed;
+    bottom: .4rem;
+    right: 1rem;
+    left: 1rem;
+    text-align: center;
+    padding: .5rem;
+    color: #fff;
+    margin-top: 1rem;
+}

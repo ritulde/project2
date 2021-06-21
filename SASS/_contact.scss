@@ -1,0 +1,28 @@
+.contact{
+    height: 100%;
+    padding-top:40vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:
+     url('../image/pexels-burst-374044.jpg') right -90px bottom ;
+    background-size: cover;
+    
+    h2{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+
+    }
+    &_list{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2 rem;
+        font-size: 1.5rem;
+    }
+    .social-icons{
+        position: initial;
+        margin-bottom: 2rem;
+    }
+
+}

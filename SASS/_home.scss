@@ -1,0 +1,22 @@
+.home{
+    height: 100%;
+    padding-top:40vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background:
+     url('../image/pexels-burst-374044.jpg') right -90px bottom ;
+    background-size: cover;
+    &_name{
+        font-size: 4rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #fff;
+        &--last{
+            color: $secondary-color;
+            font-weight: 700;
+        }
+
+    }
+
+}
